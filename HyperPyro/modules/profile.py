@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import os
 from asyncio import sleep
@@ -14,14 +14,14 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
-from rams.utils.misc import extract_user
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.utils.misc import extract_user
 
 from .help import add_command_help
 
 flood = {}
-profile_photo = "rams/modules/cache/pfp.jpg"
+profile_photo = "HyperPyro/modules/cache/pfp.jpg"
 
 
 @Client.on_message(filters.command(["block"], cmd) & filters.me)
@@ -33,7 +33,7 @@ async def block_user_func(client: Client, message: Message):
             "Mana Id/Username nya goblok, Mao block sapa ini gua?."
         )
     if user_id == client.me.id:
-        return await Man.edit("anda stress harap segera minum obat.")
+        return await Man.edit("anda stress harap segera minum baygon.")
     await client.block_user(user_id)
     umention = (await client.get_users(user_id)).mention
     await message.edit(f"**Berhasil Memblokir** {umention}")
@@ -42,13 +42,13 @@ async def block_user_func(client: Client, message: Message):
 @Client.on_message(filters.command(["unblock"], cmd) & filters.me)
 async def unblock_user_func(client: Client, message: Message):
     user_id = await extract_user(message)
-    Man = await edit_or_reply(message, "`Kalo Udah di Unblock Jangan Ngejamet Lagi....`")
+    Man = await edit_or_reply(message, "`Kalo Udah di Unblock Jangan Ngejamet Lagi ya BANGSAT....`")
     if not user_id:
         return await message.edit(
             "Berikan User ID/Username atau reply pesan pengguna untuk membuka blokir."
         )
     if user_id == client.me.id:
-        return await Man.edit("anda stress harap segera minum obat.")
+        return await Man.edit("anda stress harap segera minum baygon.")
     await client.unblock_user(user_id)
     umention = (await client.get_users(user_id)).mention
     await message.edit(f"**Berhasil Membuka Blokir** {umention}")
