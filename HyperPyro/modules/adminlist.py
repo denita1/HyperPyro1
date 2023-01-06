@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperPyro 
 
 import html
 
@@ -13,9 +13,9 @@ from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.parser import mention_html, mention_markdown
-from rams.modules.help import *
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.parser import mention_html, mention_markdown
+from HyperPyro.modules.help import *
 
 
 @Client.on_message(filters.me & filters.command(["admins", "adminlist"], cmd))
