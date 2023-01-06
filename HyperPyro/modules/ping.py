@@ -133,7 +133,7 @@ async def ramping(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        "RamPyro-bot\n"
+        "HyperPyro-bot\n"
         "ㅤㅤStatus : Menyala!\n"
         f"ㅤㅤㅤㅤping bot:"
         f"`%sms` \n"
