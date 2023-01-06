@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ
 
 import asyncio
 import os
@@ -23,10 +23,10 @@ from pyrogram.raw.types import InputStickerSetShortName
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
-from rams.helpers.tools import get_arg, get_text, resize_media
-from rams.utils.tools import add_text_img, bash
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.helpers.tools import get_arg, get_text, resize_media
+from HyperPyro.utils.tools import add_text_img, bash
 
 from .help import add_command_help
 
@@ -194,7 +194,7 @@ async def kang(client: Client, message: Message):
                     await client.send_message("Stickers", packname)
                     await asyncio.sleep(2)
                     await Man.edit(
-                        f"**Sticker Berhasil Ditambahkan!**\n         🔥 **[KLIK DISINI](https://t.me/addstickers/{packname})** 🔥\n**Untuk Menggunakan Stickers**"
+                        f"**Sticker Berhasil Ditambahkan!**\n          **[KLIK DISINI](https://t.me/addstickers/{packname})** \n**Untuk Menggunakan Stickers**"
                     )
                     return
             await client.send_document("stickers", media_)
@@ -242,7 +242,7 @@ async def kang(client: Client, message: Message):
             await client.send_message("Stickers", packname)
             await asyncio.sleep(2)
         await Man.edit(
-            f"**Sticker Berhasil Ditambahkan!**\n         🔥 **[KLIK DISINI](https://t.me/addstickers/{packname})** 🔥\n**Untuk Menggunakan Stickers**"
+            f"**Sticker Berhasil Ditambahkan!**\n          **[KLIK DISINI](https://t.me/addstickers/{packname})** \n**Untuk Menggunakan Stickers**"
         )
         if os.path.exists(str(media_)):
             os.remove(media_)
@@ -315,7 +315,7 @@ async def tinying(client: Client, message: Message):
         return await edit_or_reply(message, "**Silahkan Balas Ke Pesan Sticker!**")
     Man = await edit_or_reply(message, "`Processing . . .`")
     ik = await client.download_media(reply)
-    im1 = Image.open("rams/resources/RAMBOT.png")
+    im1 = Image.open("HyperPyro/resources/HYPER.png")
     if ik.endswith(".tgs"):
         await client.download_media(reply, "man.tgs")
         await bash("lottie_convert.py man.tgs json.json")
