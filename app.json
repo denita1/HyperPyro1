@@ -1,6 +1,6 @@
 {
-  "name": "RamPyro-Bot",
-  "description": "[RamPyro-Bot] is a modular telegram user that runs on Python3 with a pyrogram library. Powered by RamPyro-Bot.",
+  "name": "HyperPyro",
+  "description": "[HyperPyro] is a modular telegram user that runs on Python3 with a pyrogram library. Powered by HyperPyro.",
   "stack": "heroku-22",
   "env": {
     "API_ID": {
@@ -12,7 +12,7 @@
       "required": true
     },
     "STRING_SESSION1": {
-      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/ramsupportt » Lalu ketik #string",
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/SharingUserbot » Lalu ketik #string",
       "required": true
     },
     "HEROKU_API_KEY": {
