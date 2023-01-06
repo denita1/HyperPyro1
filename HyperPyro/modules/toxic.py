@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 
@@ -14,10 +14,10 @@ from pyrogram.types import Message
 
 from config import BLACKLIST_CHAT
 from config import CMD_HANDLER as cmd
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
-from rams.utils import extract_user, extract_user_and_reason
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.utils import extract_user, extract_user_and_reason
 from .help import add_command_help
 
 
@@ -30,23 +30,23 @@ async def ngejamet(client: Client, message: Message):
         )
     xx = await edit_or_reply(message, "**WOII**")
     await asyncio.sleep(1.5)
-    await xx.edit("**WOI NGENTOT**")
+    await xx.edit("**WOI MANUSIA HINA**")
     await asyncio.sleep(1.5)
-    await xx.edit("**CUMA MAU BILANG**")
+    await xx.edit("**GUA CUMA MAU BILANG**")
     await asyncio.sleep(1.5)
     await xx.edit("**GAUSAH SO ASIK**")
     await asyncio.sleep(1.5)
-    await xx.edit("**LO ITU JELEK?**")
+    await xx.edit("**LO ITU JELEK HINA**")
     await asyncio.sleep(1.5)
     await xx.edit("**GAUSAH REPLY**")
     await asyncio.sleep(1.5)
-    await xx.edit("**LO BUKAN LEVEL GUE**")
+    await xx.edit("**CUIH NAJIS BANGET DI REPLAY ORG HINA**")
     await asyncio.sleep(1.5)
-    await xx.edit("**KALO GA SENENG YA PC KONTOL**")
+    await xx.edit("**NAPA GA SENENG? YA PC LAH KONTOL**")
     await asyncio.sleep(1.5)
     await xx.edit("**BOCAH TOLOL**")
     await asyncio.sleep(1.5)
-    await xx.edit("**MENTAL PENGEMIS**")
+    await xx.edit("**MENTAL KALENG KERUPUK**")
     await asyncio.sleep(1.5)
     await xx.edit("**LEMBEK NGENTOT🥵**")
 
@@ -94,7 +94,7 @@ async def ywc(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "ok Kontol Sama - Sama",
+            "OK! Puki Sama - Sama",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -145,7 +145,7 @@ async def toxicso(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "GAUSAH SOKAB SAMA GUA GOBLOK, LU BABU GA LEVEL!!",
+            "GAUSAH SOKAB SAMA GUA GOBLOK, LU BABU DISINI, GA LEVEL SAMA GUA!!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -183,7 +183,7 @@ async def toxicmet(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "NAMANYA JUGA JAMET CAPER SANA SINI BUAT CARI NAMA",
+            "NAMANYA JUGA JAMET CAPER SANA SINI BUAT CARI NAMA. NAJIS CUIH",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -200,7 +200,7 @@ async def toxicwer(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET GOBLOK, DI TONGKRONGAN JADI BABU, DI TELE SOK JAGOAN.",
+            "WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET GOBLOK, DI TONGKRONGAN JADI BABU, DI TELE SOK JAGOAN... GUA KERESEKIN MUKA LU SINI MONYET.",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -234,7 +234,7 @@ async def toxickismin(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "CUIHHHH, MAKAN AJA MASIH NGEMIS LO GOBLOK, JANGAN SO NINGGI YA KONTOL GA KEREN LU KEK GITU GOBLOK!!",
+            "CUIHHHH, MAKAN AJA MASIH NGEMIS LO GOBLOK, JANGAN SO JADI PETINGGI YA KONTOL GA KEREN LU KEK GITU GOBLOK!!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -268,7 +268,7 @@ async def toxicsokab(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "SOKAB BET LU GOBLOK, KAGA ADA ISTILAH NYA BAWAHAN TEMENAN AMA BOS!!",
+            "SOKAB BET LU GOBLOK, KAGA ADA ISTILAH NYA BAWAHAN TEMENAN AMA BOS YA CUIH!!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -285,7 +285,7 @@ async def toxicgembel(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "MUKA BAPAK LU KEK KELAPA SAWIT ANJING, GA USAH NGATAIN ORANG, MUKA LU AJA KEK GEMBEL TEXAS GOBLOK!!",
+            "MUKA BAPAK LU KEK KELAPA SAWIT ANJING, GA USAH NGATAIN ORANG, MUKA LU AJA KEK GEMBEL GOBLOK!!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -302,7 +302,7 @@ async def toxiccuih(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "GAK KEREN LO KEK BEGITU GOBLOK, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU. CUIHH!!!",
+            "KEREN LO KEK BEGITU? NGGA GOBLOK, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU. CUIHH!!!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -357,7 +357,7 @@ async def toxicskb(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "EMANG KITA KENAL? KAGA GOBLOK SOKAB BANGET LU GOBLOK",
+            "EMANG KITA KENAL? KAGA GOBLOK, SOKAB BANGET LU GOBLOK",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -378,7 +378,7 @@ async def toxicvirtual(client: Client, message: Message):
     await asyncio.sleep(1.5)
     await xx.edit("**TAPI TETEP AJA DI TINGGAL**")
     await asyncio.sleep(1.5)
-    await xx.edit("**NI INGET**")
+    await xx.edit("**MIKIR GOBLOK, LU PUNYA OTAK KAN? PAKE!!**")
     await asyncio.sleep(1.5)
     await xx.edit("**TANGANNYA AJA GA BISA DI PEGANG**")
     await asyncio.sleep(1.5)
