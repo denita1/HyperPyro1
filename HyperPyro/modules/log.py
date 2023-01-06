@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 
@@ -13,11 +13,11 @@ from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams import BOTLOG_CHATID
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.SQL import no_log_pms_sql
-from rams.helpers.SQL.globals import addgvar, gvarstatus
-from rams.helpers.tools import get_arg
+from HyperPyro import BOTLOG_CHATID
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.SQL import no_log_pms_sql
+from HyperPyro.helpers.SQL.globals import addgvar, gvarstatus
+from HyperPyro.helpers.tools import get_arg
 
 from .help import add_command_help
 
