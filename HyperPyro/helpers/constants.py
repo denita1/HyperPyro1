@@ -5,29 +5,29 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ
 
 class First:
-    ALIVE = "`Menunjukan Jati diri 🤖`"
+    ALIVE = "`Menunjukan Jati dirinya 🤖`"
     REPO = """
-**Hey**, __I am Robot__ ⭐ **RamPyro-Bot** ⭐
+**Hey**, __I am Robot__ ⭐ **HyperPyro-Bot** ⭐
 
 ⭐ **Userbot Version :** `{}`
-⭐ **Group Support :** [Ram Support Group](t.me/ramsupportt)
-⭐ **Channel Rama :** [Story Rama](t.me/k0kb4c0de)
-⭐ **Owner Repo :** [Rama](t.me/thisrama)
-⭐ **Repo :** [RamPyro-Bot](https://github.com/ramadhani892/RamPyro-Bot)
-⭐ **Donasi :** [VIA LINK](https://trakteer.id/ramadhani892)
+⭐ **Group Support :** [Hyper Support Group](t.me/HyperSupportQ)
+⭐ **Channel Rama :** [Story Ling](t.me/storyQi)
+⭐ **Owner Repo :** [Ling](t.me/excute7)
+⭐ **Repo :** [HyperPyro-Bot](https://github.com/Ling-ex/HyperPyro)
+⭐ **Donasi :** [VIA LINK](https://trakteer.id/hyperqi)
 ⭐ **STRING :** [VIA WEB](https://replit.com/@dashezup/generate-pyrogram-session-string)
 
 
 DEPLOY [VIA HEROKU](https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JhbVB5cm8tQm90IGRyYWdvbnM)"""
-    CREATOR = 'I was created by my master <a href="https://github.com/ramadhani892/RamPyro-Bot">Ram</a> on a rainy day.'
+    CREATOR = 'I was created by my master <a href="https://github.com/Ling-ex/HyperPyro">Hyper</a> on a rainy day.'
     MSG_ON = """
-⭐ **RamPyro-Bot Menyala** ⭐
+⭐ **HyperPyro-Bot Activated** ⭐
 ━━
 ➠ **Userbot Version -** `{}`
-➠ **Ketik** `{}rama` **untuk Mengecheck Bot**
+➠ **Ketik** `{}ling` **untuk Mengecheck Bot**
 ━━
 """
 
