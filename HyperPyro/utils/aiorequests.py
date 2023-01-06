@@ -35,7 +35,7 @@ async def __aiohttpRequests(
     statuses = statuses or {}
     if not headers:
         headers = {
-            'User-Agent': 'Python/{0[0]}.{0[1]} aiohttp/{1} rams/'.format(
+            'User-Agent': 'Python/{0[0]}.{0[1]} aiohttp/{1} HyperPyro/'.format(
                 version_info,
                 aiover,
             )
