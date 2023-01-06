@@ -46,7 +46,7 @@ async def __fetch_adzan(
         text = f"""
 <b>Waktuh Ibadah Umat Muslim</b>
 {timefor}├ <b>Fajr :</b> <code>{response['items'][0]['fajr']}</code>
-├ <b>Shuruq :</b> <code>{response['items'][0]['shurooq']}</code>
+├ <b>Subuh :</b> <code>{response['items'][0]['shurooq']}</code>
 ├ <b>Dzuhur :</b> <code>{response['items'][0]['dhuhr']}</code>
 ├ <b>Ashar :</b> <code>{response['items'][0]['asr']}</code>
 ├ <b>Maghrib :</b> <code>{response['items'][0]['maghrib']}</code>
