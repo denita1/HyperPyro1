@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import time
 from datetime import datetime
@@ -17,13 +17,13 @@ from pyrogram.types import Message
 
 from config import BOT_VER, CMD_HANDLER as cmd
 from config import BRANCH as branch
-from rams import CMD_HELP, StartTime
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.constants import WWW
-from rams.helpers.PyroHelpers import SpeedConvert
-from rams.utils.tools import get_readable_time
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.PyroHelpers import ReplyCheck
+from HyperPyro import CMD_HELP, StartTime
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.constants import WWW
+from HyperPyro.helpers.PyroHelpers import SpeedConvert
+from HyperPyro.utils.tools import get_readable_time
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
 from .help import add_command_help
 
 modules = CMD_HELP
@@ -98,7 +98,7 @@ async def pingme(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ram.edit(
-        f"**🌟𝗥𝗮𝗺𝗣𝘆𝗿𝗼-𝗕𝗼𝘁🌟**\n"
+        f"**✨HyperPyro-Bot✨**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ➠  Uᴘᴛɪᴍᴇ  :** "
@@ -117,7 +117,7 @@ async def kping(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**╰•★★ |Pyro-Ping| ★★•╯**\n"
+        f"**╰•★★ |Hyper-Ping| ★★•╯**\n"
         f"★ **speed:** "
         f"`%sms` \n"
         f"★ **Uptime:** "
@@ -126,7 +126,7 @@ async def kping(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("rama", cmd) & filters.me)
+@Client.on_message(filters.command("ling", cmd) & filters.me)
 async def ramping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
