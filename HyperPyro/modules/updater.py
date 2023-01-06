@@ -82,7 +82,7 @@ async def updateme_requirements():
 )
 @Client.on_message(filters.command("apdet", cmd) & filters.me)
 async def upstream(client: Client, message: Message):
-    status = await edit_or_reply(message, "`Gua Cek dulu brok, Sabar...`")
+    status = await edit_or_reply(message, "`Bentar Cek dulu bro, Sabar...`")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     try:
@@ -175,7 +175,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Update Deploy RamPyro-Bot Sedang Dalam Proses...`"
+            "`[HEROKU]: Update Deploy HyperPyro-Bot Sedang Dalam Proses...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -192,7 +192,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`RamPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
+            "`HyperPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
         )
     else:
         try:
@@ -201,7 +201,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`RamPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
+            "`HyperPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
         )
         args = [sys.executable, "-m", "rams"]
         execle(sys.executable, *args, environ)
@@ -270,7 +270,7 @@ async def updaterman(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["apdet", "Untuk melihat list pembaruan terbaru dari RamPyro-Bot."],
+        ["apdet", "Untuk melihat list pembaruan terbaru dari HyperPyro-Bot."],
         ["apdet dulu", "Untuk mengupdate userbot."],
     ],
 )
