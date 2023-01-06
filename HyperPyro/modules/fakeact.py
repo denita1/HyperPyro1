@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 from asyncio import sleep
 
@@ -14,7 +14,7 @@ from pyrogram.raw import functions
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
 
 from .help import add_command_help
 
