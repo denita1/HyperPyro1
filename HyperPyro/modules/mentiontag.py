@@ -12,7 +12,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.tools import get_arg
+from HyperPyro.helpers.tools import get_arg
 
 from .help import add_command_help
 
