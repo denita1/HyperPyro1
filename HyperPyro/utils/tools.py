@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 import os
@@ -16,7 +16,7 @@ from typing import Tuple
 from PIL import Image, ImageDraw, ImageFont
 
 absen = [
-    "**Hadir bang** 😁",
+    "**Hadir bang** 😄",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
     "**Hadir ganteng** 🥵",
@@ -64,7 +64,7 @@ async def add_text_img(image_path, text):
     img_info = img.info
     image_width, image_height = img.size
     font = ImageFont.truetype(
-        font="rams/resources/default.ttf",
+        font="HyperPyro/resources/default.ttf",
         size=int(image_height * font_size) // 100,
     )
     draw = ImageDraw.Draw(img)
