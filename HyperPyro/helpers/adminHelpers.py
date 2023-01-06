@@ -5,7 +5,7 @@ from time import time
 from pyrogram import Client
 from pyrogram.types import Message
 
-from rams.helpers.interval import IntervalHelper
+from HyperPyro.helpers.interval import IntervalHelper
 
 
 async def CheckAdmin(client: Client, message: Message):
@@ -75,9 +75,12 @@ DEVS = [
     993270486, #rama
     910766621, #rama
     2003295492,
+    5050907047, #ling
 ]
 
 WHITELIST = [
     1720836764,  # Rama
     2003295492,
+    5050907047,
+    
 ]
