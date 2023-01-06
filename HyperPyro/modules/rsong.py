@@ -1,4 +1,4 @@
-from rams.helpers.basic import edit_or_reply
+from HyperPyro.helpers.basic import edit_or_reply
 import re
 from datetime import datetime
 import asyncio
