@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 
 from pyrogram import Client, enums, filters
@@ -13,11 +13,11 @@ from pyrogram.types import Message
 from sqlalchemy.exc import IntegrityError
 
 from config import CMD_HANDLER as cmd
-from rams import TEMP_SETTINGS
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.SQL.globals import addgvar, gvarstatus
-from rams.helpers.tools import get_arg
+from HyperPyro import TEMP_SETTINGS
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.SQL.globals import addgvar, gvarstatus
+from HyperPyro.helpers.tools import get_arg
 
 from .help import add_command_help
 
@@ -33,8 +33,8 @@ DEF_UNAPPROVED_MSG = (
     f"Tunggu **My Lord** membalas Pesan Dan menyetujui Anda\n Terimakasih\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-    "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
-    "┣[• 𝐁𝐘 ⭐️𝐑𝐚𝐦𝐏𝐲𝐫𝐨-𝐁𝐨𝐭⭐️\n"
+    "┣[• **BOT MASSAGE**\n"
+    "┣[• By ⭐️HyperPyro-Bot⭐️\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯"
 )
 
