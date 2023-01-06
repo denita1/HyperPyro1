@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 from threading import Event
@@ -15,8 +15,8 @@ from pyrogram.types import Message
 
 from config import BLACKLIST_CHAT, BOTLOG_CHATID
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply
-from rams.utils.misc import extract_args
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.utils.misc import extract_args
 
 from .help import add_command_help
 
