@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import os
 
@@ -13,12 +13,12 @@ from pyrogram import *
 from pyrogram.types import *
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply, get_text, get_user
+from HyperPyro.helpers.basic import edit_or_reply, get_text, get_user
 
 from .help import *
 
 OWNER = os.environ.get("OWNER", None)
-BIO = os.environ.get("BIO", "RamPyro-Bot")
+BIO = os.environ.get("BIO", "HyperPyro-Bot")
 
 
 @Client.on_message(filters.command("clone", cmd) & filters.me)
