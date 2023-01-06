@@ -1,6 +1,6 @@
-# RamPyro-Bot Telegram
+# HyperPyro-Bot Telegram
 
-RamPyro-Bot is a modular telegram user that runs on Python3 with a pyrogram library.
+HyperPyro-Bot is a modular telegram user that runs on Python3 with a pyrogram library.
 
 I made this repository to have fun while helping you manage the group efficiently and to help reduce boredom when using telegram.
 
@@ -14,7 +14,7 @@ When you have installed this userbot, it means you are ready with the risks.
 ```
 
 <h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku</h3>
-<a href="https://heroku.com/deploy?template=https://github.com/izzy-adeeva/RamPyro-Bot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/Ling-ex/HyperPyro"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 ## 🖇 Generating Pyrogram String Session
@@ -28,14 +28,15 @@ When you have installed this userbot, it means you are ready with the risks.
 
 ## 🏷 Support
 
-- Follow Channel [@userbotch](https://t.me/userbotch) untuk info Update bot 
-- Gabung Group [@ramsupportt](https://t.me/ramsupportt) untuk diskusi, pelaporan bug, dan bantuan tentang PyroKar-Userbot.
+- Follow Channel [@storyQi](https://t.me/storyQi) untuk info Update bot 
+- Gabung Group [@HyperSupport](https://t.me/HyperSupportQ) untuk diskusi, pelaporan bug, dan bantuan tentang HyperPyro-Userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 -  [Risman](https://github.com/mrismanaziz) for [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)
 -  [Arman](https://github.com/ArmanGG01) for [PyroKar-Userbot](https://github.com/ArmanGG01/PyroKar-Userbot)
 -  [Rama](https://github.com/ramadhani892) for [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT)
+-  [Ling](https://github.com/Ling-ex) for [Hyper-Userbot](https://github.com/Ling-ex/HyperPyro)
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/PyroMan-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot
@@ -45,6 +46,8 @@ When you have installed this userbot, it means you are ready with the risks.
 -  [Tofikdn](https://github.com/tofikdn) : Tede
 -  [Toni](https://github.com/Toni880) : Prime-UserBot
 -  [Hadi](https://github.com/hdiiofficial) : hdiiofficial
+-  [Ling]https://github.com/Ling-ex) : LING
+-  [Rama](https://github.com/ramadhani892) : RAMA-UBOT
 
 ## 📑 License
 Licensed under [GNU General Public License v3.0](https://github.com/mrismanaziz/PyroMan-Userbot/blob/Man-Userbot/LICENSE) All designs were created by [@mrismanaziz](https://github.com/mrismanaziz)
