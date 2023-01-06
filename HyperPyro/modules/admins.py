@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 
@@ -14,10 +14,10 @@ from pyrogram.errors import ChatAdminRequired
 from pyrogram.types import ChatPermissions, ChatPrivileges, Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.modules.help import add_command_help
-from rams.utils.misc import extract_user, extract_user_and_reason, list_admins
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.modules.help import add_command_help
+from HyperPyro.utils.misc import extract_user, extract_user_and_reason, list_admins
 
 unmute_permissions = ChatPermissions(
     can_send_messages=True,
