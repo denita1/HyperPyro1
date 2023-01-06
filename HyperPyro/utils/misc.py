@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import os
 import sys
@@ -18,7 +18,7 @@ admins_in_chat = {}
 
 
 def restart():
-    os.execvp(sys.executable, [sys.executable, "-m", "rams"])
+    os.execvp(sys.executable, [sys.executable, "-m", "HyperPyro"])
 
 
 async def list_admins(client: Client, chat_id: int):
