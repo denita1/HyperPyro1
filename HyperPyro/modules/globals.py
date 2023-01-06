@@ -5,17 +5,17 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 from pyrogram import Client, errors, filters
 from pyrogram.types import ChatPermissions, Message
 
 from config import CMD_HANDLER as cmd
-from rams import *
-from rams.helpers.adminHelpers import DEVS, WHITELIST
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import get_ub_chats
-from rams.utils import extract_user, extract_user_and_reason
+from HyperPyro import *
+from HyperPyro.helpers.adminHelpers import DEVS, WHITELIST
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import get_ub_chats
+from HyperPyro.utils import extract_user, extract_user_and_reason
 
 from .help import add_command_help
 
@@ -25,8 +25,8 @@ def globals_init():
         global sql, sql2
         from importlib import import_module
 
-        sql = import_module("rams.helpers.SQL.gban_sql")
-        sql2 = import_module("rams.helpers.SQL.gmute_sql")
+        sql = import_module("HyperPyro.helpers.SQL.gban_sql")
+        sql2 = import_module("HyperPyro.helpers.SQL.gmute_sql")
     except Exception as e:
         sql = None
         sql2 = None
@@ -48,14 +48,14 @@ async def gban_user(client: Client, message: Message):
     else:
         Man = await message.edit("`Gbanning....`")
     if not user_id:
-        return await Man.edit("Lo mau Gban Siapa Anjing!!!!")
+        return await Man.edit("Lo mau Gban Siapa Monyet!!!!")
     if user_id == client.me.id:
-        return await Man.edit("**Ngapain NgeGban Diri Sendiri Kentod**")
+        return await Man.edit("**Ngapain NgeGban Diri Sendiri Kentod Tolol lu ye**")
     if user_id in DEVS:
         return await Man.edit("**Gak Bisa Di Gban Kontol karena dia Yang Buat Aku 🗿**")
     if user_id in WHITELIST:
         return await Man.edit(
-            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @ramsupportt 😡**"
+            "**Lu Gak Bisa Kontol Gban Dia Karena Dia Adalah admin @HyperSupportQ 😡**"
         )
     if user_id:
         try:
@@ -142,7 +142,7 @@ async def gbanlist(client: Client, message: Message):
     users = sql.gbanned_users()
     Man = await edit_or_reply(message, "`Processing...`")
     if not users:
-        return await Man.edit("Belum Ada Jamet yang Di-Gban")
+        return await Man.edit("Belum Ada Anak Tengil yang Di-Gban")
     gban_list = "**GBanned Users:**\n"
     count = 0
     for i in users:
@@ -169,12 +169,12 @@ async def gmute_user(client: Client, message: Message):
         await Man.edit(f"`Please specify a valid user!`")
         return
     if user.id == client.me.id:
-        return await Man.edit("**Ngapain NgeGmute Diri Sendiri Pepek**")
+        return await Man.edit("**Ngapain NgeGmute Diri Sendiri Goblok**")
     if user.id in DEVS:
         return await Man.edit("**Gak Bisa Di Gmute Kontol karena dia Yang Buat Aku 🗿**")
     if user.id in WHITELIST:
         return await Man.edit(
-            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @ramsupportt 😡**"
+            "**Kau Gak Bisa Kontol Gmute Dia Karena Dia Adalah admin @HyperSupportQ 😡**"
         )
     try:
         replied_user = reply.from_user
@@ -247,7 +247,7 @@ async def gmutelist(client: Client, message: Message):
     users = sql2.gmuted_users()
     Man = await edit_or_reply(message, "`Processing...`")
     if not users:
-        return await Man.edit("Belum Ada Jamet yang Di-Gmute")
+        return await Man.edit("Belum Ada Anak Tengil yang Di-Gmute")
     gmute_list = "**GMuted Users:**\n"
     count = 0
     for i in users:
