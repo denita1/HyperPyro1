@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String
 
-from rams.helpers.SQL import BASE, SESSION
+from HyperPyro.helpers.SQL import BASE, SESSION
 
 # class set_req
 # class get_req
