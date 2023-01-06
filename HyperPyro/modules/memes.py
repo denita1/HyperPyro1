@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import get_text
+from HyperPyro.helpers.basic import get_text
 
 from .help import *
 
