@@ -13,7 +13,7 @@ from pyrogram import *
 from pyrogram.types import *
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply, get_text, get_user
+from HyperPyro.helpers.basic import edit_or_reply, get_text, get_user
 
 from .help import *
 
