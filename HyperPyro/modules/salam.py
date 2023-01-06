@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 
@@ -13,8 +13,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
 from config import IG_ALIVE, CH_SFS
 from .help import add_command_help
 
@@ -25,7 +25,7 @@ async def salamone(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "Assalamualaikum Anak Anjing!",
+            "Assalamualaikum Guys!",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -49,7 +49,7 @@ async def jwbsalam(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "Wa'alaikumsalam Kaum Dajal",
+            "Wa'alaikumsalam",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
@@ -85,7 +85,7 @@ async def salamarab(client: Client, message: Message):
 async def jakasem(client: Client, message: Message):
     xx = await edit_or_reply(message, "**Woi Kontol....**")
     await asyncio.sleep(3)
-    await xx.edit("**Muka lo jelek Bgt Kaya kontol!!!🔥**")
+    await xx.edit("**Muka lo jelek Bgt sih Kaya kontol!!!🔥**")
 
 
 @Client.on_message(filters.command("k", cmd) & filters.me)
