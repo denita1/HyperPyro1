@@ -9,7 +9,7 @@ MSG_ON = """
 🔥 **HyperPyro-Bot Activated** 🔥
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 🤖 **Userbot Version -** `{}`
-⌨️ **Ketik** `{}hyper` **untuk Mengecheck Bot**
+⌨️ **Ketik** `{}ling` **untuk Mengecheck Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
 
