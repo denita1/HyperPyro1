@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 from datetime import datetime
 
@@ -14,15 +14,15 @@ from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
 from config import *
-from rams import *
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.constants import First
+from HyperPyro import *
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.constants import First
 
 from .help import add_command_help
 
 absen = [
-    "**Hadir bang** 😁",
+    "**Hadir bang** 😄",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
     "**Hadir ganteng** 🥵",
@@ -33,7 +33,7 @@ absen = [
 
 @Client.on_message(filters.command("gesss", ["."]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
-    await message.reply("**Sayang Rama😍!**")
+    await message.reply("**Sayang Ling😍!**")
 
 
 @Client.on_message(filters.command("repo", cmd) & filters.me)
@@ -152,7 +152,7 @@ add_command_help(
     [
         ["alive", "Mencoba Apakah Bot dalam keadaan menyala atau mati."],
         ["repo", "Memunculkan Repo."],
-        ["creator", "Memberitahukan Pembuat Userbot RamPyro-Bot."],
+        ["creator", "Memberitahukan Pembuat Userbot HyperPyro-Bot."],
         ["id", "Balas Pesan Seseorang dan dapatkan Id nya."],
         [f"up `or` {cmd}uptime", "Check bot's current uptime."],
     ],
