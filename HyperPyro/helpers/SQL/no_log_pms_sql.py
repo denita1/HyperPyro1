@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Numeric
 
 try:
-    from rams.helpers.SQL import BASE, SESSION
+    from HyperPyro.helpers.SQL import BASE, SESSION
 except ImportError:
     raise AttributeError
 
