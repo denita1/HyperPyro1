@@ -23,9 +23,9 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import *
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.misc import HAPP, in_heroku
-from rams.utils.misc import restart
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.misc import HAPP, in_heroku
+from HyperPyro.utils.misc import restart
 
 from .help import add_command_help
 
@@ -173,20 +173,17 @@ async def usage_heroku(client: Client, message: Message):
     AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text =f"""
-𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡 𝗥𝗔𝗠-𝗨𝗕𝗢𝗧!!
+• **INFO HYPER USERBOT** •
 
-╭✠╼━━━━━━❖━━━━━━━✠╮
-┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 : 
-┣•   ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ.
-┣•   ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% 
-╰✠╼━━━━━━❖━━━━━━━✠╯
+❑ **PENGGUNAAN SAAT INI** : 
+├ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ.
+└ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% 
 ╼┅━━━━━━━━╍━━━━━━━━┅╾ 
-╭✠╼━━━━━━❖━━━━━━━✠╮ 
-┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗕𝗨𝗟𝗔𝗡 𝗜𝗡𝗜 : 
-┣•  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. 
-┣•  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. 
-╰✠╼━━━━━━❖━━━━━━━✠╯
-• 𝗦𝗜𝗦𝗔 𝗗𝗬𝗡𝗢  : `{day}` Hari"""
+❑ **PENGGUNAAN BULAN INI** : 
+├ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. 
+└ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. 
+╼┅━━━━━━━━╍━━━━━━━━┅╾ 
+❑ **SISA DYNO ANDA** : `{day}` Hari"""
     return await dyno.edit(text)
 
 
@@ -194,15 +191,15 @@ async def usage_heroku(client: Client, message: Message):
 async def usange_heroku(client: Client, message: Message):
     xx = await edit_or_reply(message, "`Processing...`")
     await xx.edit(
-        "✥ **Informasi Dyno Heroku :**"
+        "❑ **INFO HYPER USERBOT**"
         "\n╔════════════════════╗\n"
-        f" ➠ **Penggunaan Dyno** `{HEROKU_APP_NAME}` :\n"
-        f"     •  `0`**Jam**  `0`**Menit**  "
-        f"**|**  [`0`**%**]"
+        f"❑ **PENGGUNAAN SAAT INI**\n"
+        f"├ `0`**JAM**  `0`**MENIT**  "
+        f"└  **|**  [`0`**%**]"
         "\n◖════════════════════◗\n"
-        " ➠ **Sisa kuota dyno bulan ini** :\n"
-        f"     •  `1000`**Jam**  `0`**Menit**  "
-        f"**|**  [`100`**%**]"
+        "❑ **SISA DYNO BULAN INI** :\n"
+        f"├`1000`**JAM**  `0`**MENIT**  "
+        f"└ **|**  [`100`**%**]"
         "\n╚════════════════════╝\n"
     )
 
