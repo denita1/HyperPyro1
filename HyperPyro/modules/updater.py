@@ -26,13 +26,13 @@ from pyrogram.types import Message
 from config import BRANCH
 from config import CMD_HANDLER as cmd
 from config import GIT_TOKEN, HEROKU_API_KEY, HEROKU_APP_NAME, REPO_URL
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.misc import HAPP, XCB
-from rams.helpers.tools import get_arg
-from rams.utils.misc import restart
-from rams.utils.pastebin import PasteBin
-from rams.utils.tools import bash
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.misc import HAPP, XCB
+from HyperPyro.helpers.tools import get_arg
+from HyperPyro.utils.misc import restart
+from HyperPyro.utils.pastebin import PasteBin
+from HyperPyro.utils.tools import bash
 
 from .help import add_command_help
 
