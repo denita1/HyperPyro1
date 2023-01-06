@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 from asyncio import sleep
 from contextlib import suppress
@@ -20,9 +20,9 @@ from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams.helpers.adminHelpers import DEVS
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.tools import get_arg
+from HyperPyro.helpers.adminHelpers import DEVS
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.tools import get_arg
 
 from .help import add_command_help
 
@@ -122,9 +122,9 @@ async def joinvc(client: Client, message: Message):
 async def leavevc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     if message.from_user.id != client.me.id:
-        Man = await message.reply("`Turun Dulu...`")
+        Man = await message.reply("`Turun Dulu bye...`")
     else:
-        Man = await message.edit("`Turun Dulu....`")
+        Man = await message.edit("`Turun Dulu bye....`")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
