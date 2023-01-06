@@ -2,11 +2,11 @@ import glob
 from os.path import basename, dirname, isfile
 
 from config import *
-from rams import *
-from rams.helpers import *
-from rams.helpers.SQL import *
-from rams.resources import *
-from rams.utils import *
+from HyperPyro import *
+from HyperPyro.helpers import *
+from HyperPyro.helpers.SQL import *
+from HyperPyro.resources import *
+from HyperPyro.utils import *
 
 
 def __list_all_modules():
