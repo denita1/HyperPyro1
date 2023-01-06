@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import time
 
@@ -13,11 +13,11 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams import BOTLOG_CHATID
-from rams.helpers.msg_types import Types, get_message_type
-from rams.helpers.parser import escape_markdown, mention_markdown
-from rams.helpers.SQL.afk_db import get_afk, set_afk
-from rams.modules.help import add_command_help
+from HyperPyro import BOTLOG_CHATID
+from HyperPyro.helpers.msg_types import Types, get_message_type
+from HyperPyro.helpers.parser import escape_markdown, mention_markdown
+from HyperPyro.helpers.SQL.afk_db import get_afk, set_afk
+from HyperPyro.modules.help import add_command_help
 
 # Set priority to 11 and 12
 MENTIONED = []
