@@ -34,8 +34,8 @@ async def main():
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
-            LOGGER("master").warning(a)
-    LOGGER("HyperPyro").info(f"HyperPyro-Bot v{BOT_VER} [🔥 UDAH AKTIF BLOK! 🔥]")
+            LOGGER("dragons").warning(a)
+    LOGGER("HyperPyro").info(f"Hyper-Bot v{BOT_VER} [🔥 UDAH AKTIF BLOK! 🔥]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -43,7 +43,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("HyperPyro").info("Starting HyperPyro-Bot")
+    LOGGER("HyperPyro").info("Starting Hyper-Bot")
     install()
     heroku()
     LOOP.run_until_complete(main())
