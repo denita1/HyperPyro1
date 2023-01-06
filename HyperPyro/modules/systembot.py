@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ
 
 import sys
 from os import environ, execle, remove
@@ -14,9 +14,9 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams import BOTLOG_CHATID, LOGGER
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.misc import HAPP
+from HyperPyro import BOTLOG_CHATID, LOGGER
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.misc import HAPP
 
 from .help import add_command_help
 
@@ -43,9 +43,9 @@ async def shutdown_bot(client: Client, message: Message):
         await client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**RamPyro-Bot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**HyperPyro-Bot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(message, "**RamPyro-Bot Berhasil di matikan!**")
+    await edit_or_reply(message, "**HyperPyro-Bot Berhasil di matikan!**")
     if HAPP is not None:
         HAPP.process_formation()["worker"].scale(0)
     else:
@@ -65,7 +65,7 @@ async def logs_ubot(client: Client, message: Message):
     await client.send_document(
         message.chat.id,
         "Logs-Heroku.txt",
-        thumb="rams/resources/logo.jpg",
+        thumb="HyperPyro/resources/logo.jpg",
         caption="**Ini Logs Heroku anda**",
     )
     await Man.delete()
