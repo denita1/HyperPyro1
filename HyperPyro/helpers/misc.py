@@ -67,9 +67,9 @@ def git():
         UPSTREAM_REPO = REPO_URL
     try:
         repo = Repo()
-        LOGGER("rams").info(f"Git Client Found")
+        LOGGER("HyperPyro").info(f"Git Client Found")
     except GitCommandError:
-        LOGGER("rams").info(f"Invalid Git Command")
+        LOGGER("HyperPyro").info(f"Invalid Git Command")
     except InvalidGitRepositoryError:
         repo = Repo.init()
         if "origin" in repo.remotes:
@@ -94,7 +94,7 @@ def git():
         except GitCommandError:
             repo.git.reset("--hard", "FETCH_HEAD")
         install_req("pip3 install --no-cache-dir -U -r requirements.txt")
-        LOGGER("rams").info("Fetched Latest Updates")
+        LOGGER("HyperPyro").info("Fetched Latest Updates")
 
 
 def is_heroku():
@@ -108,7 +108,7 @@ def heroku():
             try:
                 Heroku = heroku3.from_key(HEROKU_API_KEY)
                 HAPP = Heroku.app(HEROKU_APP_NAME)
-                LOGGER("rams").info(f"Heroku App Configured")
+                LOGGER("HyperPyro").info(f"Heroku App Configured")
             except BaseException as e:
                 LOGGER("Heroku").error(e)
                 LOGGER("Heroku").info(
@@ -122,12 +122,12 @@ async def in_heroku():
 async def create_botlog(client):
     if HAPP is None:
         return
-    LOGGER("rams").info(
+    LOGGER("HyperPyro").info(
         "SEBENTAR YA KENTOD, GUA LAGI BIKIN GRUPLOG BUAT LU."
     )
-    desc = "Group Log untuk RamPyro-Bot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n⭐ Powered By ~ @userbotch ⭐"
+    desc = "Group Log untuk HyperPyro-Bot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n⭐ Powered By ~ @HyperSupportQ ⭐"
     try:
-        gruplog = await client.create_supergroup("Logs RamPyro-Bot", desc)
+        gruplog = await client.create_supergroup("Logs HyperPyro-Bot", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id
@@ -135,7 +135,7 @@ async def create_botlog(client):
             path = dotenv.find_dotenv("config.env")
             dotenv.set_key(path, "BOTLOG_CHATID", gruplog.id)
     except Exception:
-        LOGGER("rams").warning(
+        LOGGER("HyperPyro").warning(
             "var BOTLOG_CHATID kamu belum di isi. Buatlah grup telegram dan masukan bot @MissRose_bot lalu ketik /id Masukan id grup nya di var BOTLOG_CHATID"
         )
 
