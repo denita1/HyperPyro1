@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/Lunatic0de
+# t.me/SharingUserbot & t.me/HyperSupportQ 
 
 import asyncio
 import os
@@ -14,11 +14,11 @@ from pyrogram import Client, enums, filters, raw
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from rams import *
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
-from rams.helpers.tools import get_arg
-from rams.utils import s_paste
+from HyperPyro import *
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.helpers.tools import get_arg
+from HyperPyro.utils import s_paste
 
 from .help import *
 
