@@ -1,11 +1,11 @@
-# Thanks For: @mrismanaziz
+# Thanks For: @excute7
 # Copyright (C) 2022 Pyro-ManUserbot
 #
-# This file is a part of < https://github.com/ramadhani892/RamPyro-Bot/ >
+# This file is a part of < https://github.com/Ling-ex/HyperPyro/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/SharingUserbot & t.me/ramsupportt
+# t.me/SharingUserbot & t.me/ramsupport & t.me/HyperSupportQ 
 
 
 from distutils.util import strtobool
@@ -16,30 +16,30 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 
-ALIVE_EMOJI = getenv("ALIVE_EMOJI", "👑")
-ALIVE_LOGO = getenv("ALIVE_LOGO", "https://telegra.ph/file/eda4816a97d4e74445fc0.jpg")
-ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "Hey bro, I am rams.")
+ALIVE_EMOJI = getenv("ALIVE_EMOJI", "🔥")
+ALIVE_LOGO = getenv("ALIVE_LOGO", "https://telegra.ph/file/2acb64ad8954bca743a7e.jpg")
+ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "Hey bro, I am Hyper.")
 API_HASH = getenv("API_HASH")
 API_ID = int(getenv("API_ID", ""))
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001692751821]
+    BLACKLIST_CHAT = [-1001883961446]
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
 BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
 BOT_VER = "0.3.1@master"
 BRANCH = getenv("BRANCH", "master")
-CH_SFS = getenv("CH_SFS", "K0Kb4c0de")
-IG_ALIVE = getenv("IG_ALIVE", "e_rama11")
-CHANNEL = getenv("CHANNEL", "userbotch")
-CMD_HANDLER = getenv("CMD_HANDLER", ".")
+CH_SFS = getenv("CH_SFS", "storyQi")
+IG_ALIVE = getenv("IG_ALIVE", "rizki.maulna_")
+CHANNEL = getenv("CHANNEL", "ProjectHyper")
+CMD_HANDLER = getenv("CMD_HANDLER", ",,")
 DB_URL = getenv("DATABASE_URL", "")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
-GROUP = getenv("GROUP", "ramsupportt")
+GROUP = getenv("GROUP", "HyperSupportQ")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
 PM_AUTO_BAN = strtobool(getenv("PM_AUTO_BAN", "True"))
-REPO_URL = getenv("https://github.com/izzy-adeeva/RamPyro-Bot")
+REPO_URL = getenv("https://github.com/Ling-ex/HyperPyro")
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
