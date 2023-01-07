@@ -123,7 +123,6 @@ async def kping(client: Client, message: Message):
     await ling.edit("**G**")
     await asyncio.sleep(1.5)
     await ling.edit("**↻**")
-    await asyncio.sleep(1.5)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ling.text(
