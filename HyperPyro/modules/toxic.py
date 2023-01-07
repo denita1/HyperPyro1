@@ -363,6 +363,23 @@ async def toxicskb(client: Client, message: Message):
     )
 
 
+@Client.on_message(filters.command("lingg", cmd) & filters.me)
+async def toxiclingg(client: Client, message: Message):
+    user_id = await extract_user(message)
+    if user_id in DEVS:
+        return await edit_or_reply(
+            message, "**LU GA DI AJAK GOBLOK!**"
+        )
+    await asyncio.gather(
+        message.delete(),
+        client.send_message(
+            message.chat.id,
+            "KIW KIW PEMBUAT GUA GANTENG BANGET COKK AHH KIW KIW LINGTAMVAN KIW",
+            reply_to_message_id=ReplyCheck(message),
+        ),
+    )
+
+
 @Client.on_message(filters.command("virtual", cmd) & filters.me)
 async def toxicvirtual(client: Client, message: Message):
     user_id = await extract_user(message)
@@ -408,6 +425,7 @@ add_command_help(
         ["cuih", "Ngeludahin keluarganya satu satu wkwk."],
         ["dih", "Ngeledek anak haram."],
         ["gcs", "Ngeledek gc sampah."],
+        ["lingg", "Ini bukan tongsik, tapi saya memuji pembuat saya."],
     ],
 )
 
