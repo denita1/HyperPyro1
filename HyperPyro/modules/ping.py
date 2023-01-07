@@ -119,6 +119,7 @@ async def kping(client: Client, message: Message):
     await ling.edit("**N**")
     await ling.edit("**G**")
     await ling.edit("**↻**")
+    end = datetime.now()
     duration = (end - start).microseconds / 1000
     await ling.text(
         f"**❏ HY-PONG**\n"
