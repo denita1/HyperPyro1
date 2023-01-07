@@ -75,29 +75,29 @@ async def nearest_dc(client: Client, message: Message):
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ram = await edit_or_reply(message, "**Mengecek Sinyal...**")
-    await ram.edit("**▁**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂ ▄ ▅**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ **")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁**")
-    await ram.edit("**▁ ▂**")
-    await ram.edit("**▁ ▂ ▄**")
-    await ram.edit("**▁ ▂ ▄ ▅**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
-    await ram.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
+    ling = await edit_or_reply(message, "**Mengecek Sinyal...**")
+    await ling.edit("**▁**")
+    await ling.edit("**▁ ▂**")
+    await ling.edit("**▁ ▂ ▄**")
+    await ling.edit("**▁ ▂ ▄ ▅**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆**")
+    await ling.edit("**▁ ▂ ▄ ▅ **")
+    await ling.edit("**▁ ▂ ▄**")
+    await ling.edit("**▁ ▂**")
+    await ling.edit("**▁**")
+    await ling.edit("**▁ ▂**")
+    await ling.edit("**▁ ▂ ▄**")
+    await ling.edit("**▁ ▂ ▄ ▅**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆ ▇**")
+    await ling.edit("**▁ ▂ ▄ ▅ ▆ ▇ █**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await ram.edit(
+    await ling.edit(
         f"**✨HyperPyro-Bot✨**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
@@ -114,10 +114,14 @@ async def pingme(client: Client, message: Message):
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    end = datetime.now()
+    ling = await edit_or_reply(message, "**P**")
+    await ling.edit("**I**")
+    await ling.edit("**N**")
+    await ling.edit("**G**")
+    await ling.edit("**↻**")
     duration = (end - start).microseconds / 1000
-    await message.reply_text(
-        f"**❏ HY-PING**\n"
+    await ling.text(
+        f"**❏ HY-PONG**\n"
         f"**├ Speed:** "
         f"`%sms` \n"
         f"**├ Uptime:** "
@@ -134,15 +138,15 @@ async def ramping(client: Client, message: Message):
     duration = (end - start).microseconds / 1000
     await message.reply_text(
         "HyperPyro-bot\n"
-        "ㅤㅤStatus : Menyala!\n"
-        f"ㅤㅤㅤㅤping bot:"
+        "Status : Menyala!\n"
+        f"ping bot:"
         f"`%sms` \n"
-        f"ㅤㅤㅤㅤmodules:</b> <code>{len(modules)} Modules</code> \n"
-        f"ㅤㅤㅤㅤbot version: {BOT_VER} \n"
-        f"ㅤㅤㅤㅤbot uptime:"
+        f"modules:</b> <code>{len(modules)} Modules</code> \n"
+        f"bot version: {BOT_VER} \n"
+        f"bot uptime:"
         f"`{uptime}` \n"
-        f"ㅤㅤㅤㅤbranch: {branch} \n\n"
-        f"ㅤㅤㅤㅤOwner : {client.me.mention}" % (duration)
+        f"branch: {branch} \n\n"
+        f"Owner : {client.me.mention}" % (duration)
     )
         
 add_command_help(
