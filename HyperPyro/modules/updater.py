@@ -203,7 +203,7 @@ async def upstream(client: Client, message: Message):
         await status.edit(
             "`HyperPyro-Bot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
         )
-        args = [sys.executable, "-m", "rams"]
+        args = [sys.executable, "-m", "HyperPyro"]
         execle(sys.executable, *args, environ)
         return
 
