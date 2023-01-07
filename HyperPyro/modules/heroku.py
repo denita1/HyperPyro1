@@ -194,12 +194,12 @@ async def usange_heroku(client: Client, message: Message):
         "❑ **INFO HYPER USERBOT**"
         "\n╔════════════════════╗\n"
         f"❑ **PENGGUNAAN SAAT INI**\n"
-        f"├ `0`**JAM**  `0`**MENIT**\n"
-        f"└  **|**  [`0`**%**]"
+        f"├ `0` **JAM**  `0` **MENIT**\n"
+        f"└  **PRESENTASE**  [`0`**%**]"
         "\n◖════════════════════◗\n"
         "❑ **SISA DYNO BULAN INI** :\n"
-        f"├`1000`**JAM**  `0`**MENIT**\n"
-        f"└ **|**  [`100`**%**]"
+        f"├`1000` **JAM**  `0` **MENIT**\n"
+        f"└ **PRESENTASE**  [`100`**%**]"
         "\n╚════════════════════╝\n"
     )
 
