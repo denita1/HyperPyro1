@@ -44,8 +44,8 @@ DEF_UNAPPROVED_MSG = (
 )
 async def incomingpm(client: Client, message: Message):
     try:
-        from rams.helpers.SQL.globals import gvarstatus
-        from rams.helpers.SQL.pm_permit_sql import is_approved
+        from HyperPyro.helpers.SQL.globals import gvarstatus
+        from HyperPyro.helpers.SQL.pm_permit_sql import is_approved
     except BaseException:
         pass
 
@@ -101,7 +101,7 @@ async def incomingpm(client: Client, message: Message):
 
 async def auto_accept(client, message):
     try:
-        from rams.helpers.SQL.pm_permit_sql import approve, is_approved
+        from HyperPyro.helpers.SQL.pm_permit_sql import approve, is_approved
     except BaseException:
         pass
 
@@ -110,7 +110,7 @@ async def auto_accept(client, message):
             approve(message.chat.id)
             await client.send_message(
                 message.chat.id,
-                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer RamPyro-Bot</b>",
+                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer HyperPyro-Bot</b>",
                 parse_mode=enums.ParseMode.HTML,
             )
         except IntegrityError:
@@ -148,7 +148,7 @@ async def auto_accept(client, message):
 )
 async def approvepm(client: Client, message: Message):
     try:
-        from rams.helpers.SQL.pm_permit_sql import approve
+        from HyperPyro.helpers.SQL.pm_permit_sql import approve
     except BaseException:
         await message.edit("Running on Non-SQL mode!")
         return
@@ -187,7 +187,7 @@ async def approvepm(client: Client, message: Message):
 )
 async def disapprovepm(client: Client, message: Message):
     try:
-        from rams.helpers.SQL.pm_permit_sql import dissprove
+        from HyperPyro.helpers.SQL.pm_permit_sql import dissprove
     except BaseException:
         await message.edit("Running on Non-SQL mode!")
         return
@@ -225,7 +225,7 @@ async def setpm_limit(client: Client, cust_msg: Message):
             f"**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `{cmd}setvar PM_AUTO_BAN True`"
         )
     try:
-        from rams.helpers.SQL.globals import addgvar
+        from HyperPyro.helpers.SQL.globals import addgvar
     except AttributeError:
         await cust_msg.edit("**Running on Non-SQL mode!**")
         return
@@ -278,7 +278,7 @@ async def setpmpermit(client: Client, cust_msg: Message):
             "**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `.setvar PM_AUTO_BAN True`"
         )
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await cust_msg.edit("**Running on Non-SQL mode!**")
         return
@@ -301,7 +301,7 @@ async def get_pmermit(client: Client, cust_msg: Message):
             "**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `.setvar PM_AUTO_BAN True`"
         )
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await cust_msg.edit("**Running on Non-SQL mode!**")
         return
@@ -323,7 +323,7 @@ async def reset_pmpermit(client: Client, cust_msg: Message):
             f"**Anda Harus Menyetel Var** `PM_AUTO_BAN` **Ke** `True`\n\n**Bila ingin Mengaktifkan PMPERMIT Silahkan Ketik:** `{cmd}setvar PM_AUTO_BAN True`"
         )
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await cust_msg.edit("**Running on Non-SQL mode!**")
         return
