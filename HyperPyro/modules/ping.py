@@ -117,12 +117,12 @@ async def kping(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**╰•★★ |Hyper-Ping| ★★•╯**\n"
-        f"★ **speed:** "
+        f"**❏ HY-PING**\n"
+        f"**├ Speed:** "
         f"`%sms` \n"
-        f"★ **Uptime:** "
+        f"**├ Uptime:** "
         f"`{uptime}` \n"
-        f"★ **owner:** {client.me.mention}" % (duration)
+        f"**└ Owner:** {client.me.mention}" % (duration)
     )
 
 
