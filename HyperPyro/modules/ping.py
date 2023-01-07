@@ -111,7 +111,7 @@ async def pingme(client: Client, message: Message):
     filters.command("dping", ["."]) & filters.user(DEVS) & ~filters.me
 )
 @Client.on_message(filters.command("ping", cmd) & filters.me)
-async def pingme(client: Client, message: Message):
+async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     ling = await edit_or_reply(message, "**P**")
@@ -125,7 +125,7 @@ async def pingme(client: Client, message: Message):
     await ling.edit("**PING↻**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await ling.text(
+    await message.reply_text(
         f"**❏ HY-PONG**\n"
         f"**├ Speed:** "
         f"`%sms` \n"
@@ -136,7 +136,7 @@ async def pingme(client: Client, message: Message):
 
 
 @Client.on_message(filters.command("ling", cmd) & filters.me)
-async def ramping(client: Client, message: Message):
+async def lingping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     end = datetime.now()
