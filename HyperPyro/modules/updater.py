@@ -80,9 +80,9 @@ async def updateme_requirements():
 @Client.on_message(
     filters.command("diupdate", ["."]) & filters.user(DEVS) & ~filters.me
 )
-@Client.on_message(filters.command("apdet", cmd) & filters.me)
+@Client.on_message(filters.command("update", cmd) & filters.me)
 async def upstream(client: Client, message: Message):
-    status = await edit_or_reply(message, "`Bentar Cek dulu bro, Sabar...`")
+    status = await edit_or_reply(message, "`Bentar Cek dulu bro, Sabar Goblok☺️...`")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     try:
@@ -125,7 +125,7 @@ async def upstream(client: Client, message: Message):
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
-    if "dulu" not in conf:
+    if "deploy" not in conf:
         if changelog:
             changelog_str = f"**Tersedia Pembaruan Untuk Branch [{ac_br}]:\n\nCHANGELOG:**\n\n`{changelog}`"
             if len(changelog_str) > 4096:
@@ -136,13 +136,13 @@ async def upstream(client: Client, message: Message):
                 await client.send_document(
                     message.chat.id,
                     "output.txt",
-                    caption=f"**Ketik** `{cmd}apdet dulu` **Untuk Mengupdate Userbot.**",
+                    caption=f"**Ketik** `{cmd}update deploy` **Untuk Mengupdate Userbot.**",
                     reply_to_message_id=status.id,
                 )
                 remove("output.txt")
             else:
                 return await status.edit(
-                    f"{changelog_str}\n**Ketik** `{cmd}apdet dulu` **Untuk Mengupdate Userbot.**",
+                    f"{changelog_str}\n**Ketik** `{cmd}update deploy` **Untuk Mengupdate Userbot.**",
                     disable_web_page_preview=True,
                 )
         else:
@@ -270,7 +270,7 @@ async def updaterman(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["apdet", "Untuk melihat list pembaruan terbaru dari HyperPyro-Bot."],
-        ["apdet dulu", "Untuk mengupdate userbot."],
+        ["update", "Untuk melihat list pembaruan terbaru dari HyperPyro-Bot."],
+        ["update deploy", "Untuk mengupdate userbot."],
     ],
 )
