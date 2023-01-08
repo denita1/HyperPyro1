@@ -34,7 +34,7 @@ async def main():
                 f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
             )
         except Exception as a:
-            LOGGER("dragons").warning(a)
+            LOGGER("master").warning(a)
     LOGGER("HyperPyro").info(f"Hyper-Bot v{BOT_VER} [🔥 UDAH AKTIF BLOK! 🔥]")
     if not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
