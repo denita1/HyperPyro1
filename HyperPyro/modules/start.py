@@ -36,7 +36,7 @@ async def absen(_, message: Message):
     await message.reply("**Sayang Ling😍!**")
 
 
-@Client.on_message(filters.command("repo", cmd) & filters.me)
+@Client.on_message(filters.command("rizki", cmd) & filters.me)
 async def repo(client: Client, message: Message):
     await edit_or_reply(
         message, First.REPO.format(BOT_VER), disable_web_page_preview=True
@@ -151,7 +151,7 @@ add_command_help(
     "start",
     [
         ["alive", "Mencoba Apakah Bot dalam keadaan menyala atau mati."],
-        ["repo", "Memunculkan Repo."],
+        ["repo", "Memunculkan Repo. Tapi ga bisa yhaha"],
         ["creator", "Memberitahukan Pembuat Userbot HyperPyro-Bot."],
         ["id", "Balas Pesan Seseorang dan dapatkan Id nya."],
         [f"up `or` {cmd}uptime", "Check bot's current uptime."],
