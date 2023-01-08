@@ -115,18 +115,16 @@ async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     ling = await edit_or_reply(message, "**P**")
-    await asyncio.sleep(0,5)
-    await ling.edit("**PI**")
-    await asyncio.sleep(0,5)
-    await ling.edit("**PIN**")
-    await asyncio.sleep(0,5)
-    await ling.edit("**PING**")
-    await asyncio.sleep(0.5)
-    await ling.edit("**PING↻**")
+    await asyncio.sleep(0,2)
+    await ling.edit("**Pi**")
+    await asyncio.sleep(0,2)
+    await ling.edit("**Pin**")
+    await asyncio.sleep(0,2)
+    await ling.edit("**Ping**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**Ping:** "
+        f"**Pong:** "
         f"`%sms` \n"
         f"**Uptime:** "
         f"`{uptime}` \n"
