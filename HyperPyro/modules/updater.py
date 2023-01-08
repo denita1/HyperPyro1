@@ -100,7 +100,7 @@ async def upstream(client: Client, message: Message):
         repo.__del__()
         return
     except InvalidGitRepositoryError:
-        if conf != "dulu":
+        if conf != "deploy":
             pass
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
