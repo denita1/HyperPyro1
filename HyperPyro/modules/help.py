@@ -10,7 +10,6 @@
 from prettytable import PrettyTable
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
-from random import coiche
 
 from config import CMD_HANDLER
 from HyperPyro import CMD_HELP
