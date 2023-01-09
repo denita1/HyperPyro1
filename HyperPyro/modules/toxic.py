@@ -425,7 +425,6 @@ add_command_help(
         ["cuih", "Ngeludahin keluarganya satu satu wkwk."],
         ["dih", "Ngeledek anak haram."],
         ["gcs", "Ngeledek gc sampah."],
-        ["lingg", "Ini bukan tongsik, tapi saya memuji pembuat saya."],
     ],
 )
 
