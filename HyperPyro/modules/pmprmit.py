@@ -22,19 +22,16 @@ from HyperPyro.helpers.tools import get_arg
 from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
-    "╭━━━━━━━━━━━━━━━━━╮\n    🌟SELAMAT DATANG🌟\n"
+    "╭━━━━━━━━━━━━━━━━━╮\n    SELAMAT DATANG👋\n"
     "╰━━━━━━━━━━━━━━━━━╯\n"
     "╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
-    "Mohon Bersabar Kontol, Saya Sebagai\n"
-    f"Bot **Kece** Menyarankan Anda, Untuk Sadar Diri.\n"
-    f"Siapa Tau Anda Jelek, Atau Memang Dianggap Tidak Penting Sama **Tuan Saya** \n"
-    "Atau anda memang jelek Dan Ga berguna,Seperti Sampah masyarakat \n"
-    "Jadi Jangan Spam, Nanti anda saya blokir.\n"
-    f"Tunggu **Tuan Saya** membalas Pesan Dan menyetujui Anda\n Terimakasih\n"
+    "Jangan Spam Majikan Gua.\n"
+    "Kalo Lu Ngeyel Spam Chat Gua Blockir Lu.\n"
+    f"Tunggu **Majikan gua** Nerima Pesan Dari Lu\n Terimakasih\n"
     "╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
     "┣[• **BOT MASSAGE**\n"
-    "┣[•By ⭐️HyperPyro-Bot⭐️\n"
+    "┣[• By HyperPyro-Bot\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯"
 )
 
