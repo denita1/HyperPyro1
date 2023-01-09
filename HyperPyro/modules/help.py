@@ -36,7 +36,7 @@ async def module_help(client: Client, message: Message):
             message, f"```{str(ac)}```\n• @storyQi × @HyperSupportQ •"
         )
         await message.reply(
-            f"**Contoh Ketik** `{CMD_HANDLER}help afk` **Untuk Melihat Informasi Module**"
+            f"**Contoh Ketik** `.help afk` **Untuk Melihat Informasi Module**"
         )
 
     if help_arg:
@@ -44,7 +44,7 @@ async def module_help(client: Client, message: Message):
             commands: dict = CMD_HELP[help_arg]
             this_command = f"──「 **Help For {str(help_arg).upper()}** 」──\n\n"
             for x in commands:
-                this_command += f"  •  **Command:** `{CMD_HANDLER}{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
+                this_command += f"  •  **Command:** `{.}{str(x)}`\n  •  **Function:** `{str(commands[x])}`\n\n"
             this_command += "© @storyQi"
             await edit_or_reply(
                 message, this_command, parse_mode=enums.ParseMode.MARKDOWN
