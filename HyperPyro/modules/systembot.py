@@ -33,7 +33,7 @@ async def restart_bot(_, message: Message):
     if HAPP is not None:
         HAPP.restart()
     else:
-        args = [sys.executable, "-m", "rams"]
+        args = [sys.executable, "-m", "HyperPyro"]
         execle(sys.executable, *args, environ)
 
 
