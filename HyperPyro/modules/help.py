@@ -36,7 +36,7 @@ async def module_help(client: Client, message: Message):
             message, f"```{str(ac)}```\n• @storyQi × @HyperSupportQ •"
         )
         await message.reply(
-            f"**Contoh Ketik** `.help afk` **Untuk Melihat Informasi Module**"
+            f"**Contoh Ketik** `{cmd}help afk` **Untuk Melihat Informasi Module**"
         )
 
     if help_arg:
