@@ -114,21 +114,14 @@ async def pingme(client: Client, message: Message):
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    ling = await edit_or_reply(message, "**P**")
-    await asyncio.sleep(0,2)
-    await ling.edit("**Pi**")
-    await asyncio.sleep(0,2)
-    await ling.edit("**Pin**")
-    await asyncio.sleep(0,2)
-    await ling.edit("**Ping**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await message.reply_text(
-        f"**Pong:** "
+        f"**Pong !!** "
         f"`%sms` \n"
-        f"**Uptime:** "
+        f"**Uptime -** "
         f"`{uptime}` \n"
-        f"**Owner:** {client.me.mention}" % (duration)
+        f"**Owner :** {client.me.mention}" % (duration)
     )
 
 
