@@ -31,7 +31,7 @@ absen = [
 ]
 
 
-@Client.on_message(filters.command("gesss", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("gays", ["."]) & filters.user(DEVS) & ~filters.me)
 async def absen(_, message: Message):
     await message.reply("**Sayang Ling😍!**")
 
@@ -43,7 +43,7 @@ async def repo(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("creator", cmd) & filters.me)
+@Client.on_message(filters.command("maulana", cmd) & filters.me)
 async def creator(client: Client, message: Message):
     await edit_or_reply(message, First.CREATOR)
 
@@ -151,8 +151,6 @@ add_command_help(
     "start",
     [
         ["alive", "Mencoba Apakah Bot dalam keadaan menyala atau mati."],
-        ["repo", "Memunculkan Repo. Tapi ga bisa yhaha"],
-        ["creator", "Memberitahukan Pembuat Userbot HyperPyro-Bot."],
         ["id", "Balas Pesan Seseorang dan dapatkan Id nya."],
         [f"up `or` {cmd}uptime", "Check bot's current uptime."],
     ],
