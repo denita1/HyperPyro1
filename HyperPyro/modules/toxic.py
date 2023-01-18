@@ -363,19 +363,28 @@ async def toxicskb(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("lingg", cmd) & filters.me)
-async def toxiclingg(client: Client, message: Message):
+@Client.on_message(filters.command("owner", cmd) & filters.me)
+async def owner(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
         return await edit_or_reply(
             message, "**LU GA DI AJAK GOBLOK!**"
         )
-    await asyncio.gather(
-        message.delete(),
-        client.send_message(
-            message.chat.id,
-            "KIW KIW PEMBUAT GUA GANTENG BANGET COKK AHH KIW KIW LINGTAMVAN KIW",
-            reply_to_message_id=ReplyCheck(message),
+    ling = await edit_or_reply(message, "**WOY!!**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**MINGGIR LO**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**IYA LO**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**MINGGIR!!**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**TU ADA OWNER GUA**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**JANGAN BERISIK LU EGO**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**SUNGKEM KEPADA OWNER**")
+    await asyncio.sleep(1.5)
+    await ling.edit("**🙇🙇🙇**")
         ),
     )
 
