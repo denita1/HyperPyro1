@@ -385,7 +385,6 @@ async def owner(client: Client, message: Message):
     await ling.edit("**SUNGKEM KEPADA OWNER**")
     await asyncio.sleep(1.5)
     await ling.edit("**🙇🙇🙇**")
-        ),
     )
 
 
