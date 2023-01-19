@@ -14,11 +14,11 @@ class First:
 
 ⭐ **Userbot Version :** `{}`
 ⭐ **Group Support :** [Hyper Support Group](t.me/HyperSupportQ)
-⭐ **Channel Rama :** [Story Ling](t.me/storyQi)
+⭐ **Channel ling :** [Story Ling](t.me/storyQi)
 ⭐ **Owner Repo :** [Ling](t.me/excute7)
 ⭐ **Repo :** [HyperPyro-Bot](https://github.com/Ling-ex/HyperPyro)
 ⭐ **Donasi :** [VIA LINK](https://trakteer.id/hyperqi)
-⭐ **STRING :** [VIA WEB](https://replit.com/@dashezup/generate-pyrogram-session-string)
+⭐ **STRING :** [VIA BOT](https://t.me/StringManRobot)
 
 
 DEPLOY [VIA HEROKU](https://telegram.dog/XTZ_HerokuBot?start=cmFtYWRoYW5pODkyL1JhbVB5cm8tQm90IGRyYWdvbnM)"""
