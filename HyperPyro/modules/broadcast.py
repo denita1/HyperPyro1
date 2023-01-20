@@ -26,7 +26,7 @@ from .help import add_command_help
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/Ling-ex/Reforestation/master/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -66,7 +66,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{error}` **Grup**"
+        f"**✔️Berhasil Mengirim Pesan Ke** `{done}` **Grup, ❌Gagal Mengirim Pesan Ke** `{error}` **Grup**"
     )
 
 
@@ -98,7 +98,7 @@ async def gucast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{error}` **chat**"
+        f"**✔️Berhasil Mengirim Pesan Ke** `{done}` **chat, ❌Gagal Mengirim Pesan Ke** `{error}` **chat**"
     )
 
 
