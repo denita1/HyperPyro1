@@ -13,8 +13,8 @@ from pyrogram import Client, enums, filters
 from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
-from HyperPyro.helpers.basic import edit_or_reply
-from HyperPyro.helpers.parser import mention_html, mention_markdown
+from linglibs.hyper.helpers.basic import edit_or_reply
+from linglibs.hyper.helpers.parser import mention_html, mention_markdown
 from HyperPyro.modules.help import *
 
 
