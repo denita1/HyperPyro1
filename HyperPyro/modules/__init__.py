@@ -3,10 +3,10 @@ from os.path import basename, dirname, isfile
 
 from config import *
 from HyperPyro import *
-from HyperPyro.helpers import *
-from HyperPyro.helpers.SQL import *
-from HyperPyro.resources import *
-from HyperPyro.utils import *
+from linglibs.hyper.helpers import *
+from linglibs.hyper.helpers.SQL import *
+from linglibs.hyper.resources import *
+from linglibs.hyper.utils import *
 
 
 def __list_all_modules():
