@@ -1,3 +1,4 @@
+import time
 import importlib
 from pyrogram import idle
 from uvloop import install
@@ -6,6 +7,7 @@ from config import BOT_VER, CMD_HANDLER
 from HyperPyro import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
 from HyperPyro.helpers.misc import create_botlog, git, heroku
 from HyperPyro.modules import ALL_MODULES
+
 MSG_ON = """
 🔥 **HyperPyro-Bot Activated** 🔥
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
@@ -13,6 +15,7 @@ MSG_ON = """
 ⌨️ **Ketik** `{}ling` **untuk Mengecheck Bot**
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 """
+MSG_BOT = (f"**Hyper Robot Assistant**\nis alive...")
 
 
 async def main():
