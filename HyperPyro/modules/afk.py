@@ -14,9 +14,9 @@ from pyrogram.types import Message
 
 from config import CMD_HANDLER as cmd
 from HyperPyro import BOTLOG_CHATID
-from linglibs.hyper.helpers.msg_types import Types, get_message_type
-from linglibs.hyper.helpers.parser import escape_markdown, mention_markdown
-from linglibs.hyper.helpers.SQL.afk_db import get_afk, set_afk
+from HyperPyro.helpers.msg_types import Types, get_message_type
+from HyperPyro.helpers.parser import escape_markdown, mention_markdown
+from HyperPyro.helpers.SQL.afk_db import get_afk, set_afk
 from HyperPyro.modules.help import add_command_help
 
 # Set priority to 11 and 12
