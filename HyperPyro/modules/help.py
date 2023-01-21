@@ -11,10 +11,10 @@ import asyncio
 from prettytable import PrettyTable
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
-from geezlibs.ram.helpers.basic import edit_or_reply
-from geezlibs.ram.helpers.utility import split_list
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.utility import split_list
 from config import CMD_HANDLER as cmd
-from rams import CMD_HELP,app
+from HyperPyro import CMD_HELP,app
 
 def ReplyCheck(message: Message):
     reply_id = None
