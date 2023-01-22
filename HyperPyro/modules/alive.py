@@ -21,19 +21,19 @@ from telegraph import exceptions, upload_file
 from config import BOT_VER, CHANNEL
 from config import CMD_HANDLER as cmd
 from config import GROUP
-from rams import CMD_HELP, StartTime
-from rams.helpers.basic import edit_or_reply
-from rams.helpers.PyroHelpers import ReplyCheck
-from rams.helpers.SQL.globals import gvarstatus
-from rams.helpers.tools import convert_to_image
-from rams.utils import get_readable_time
-from rams.utils.misc import restart
+from HyperPyro import CMD_HELP, StartTime
+from HyperPyro.helpers.basic import edit_or_reply
+from HyperPyro.helpers.PyroHelpers import ReplyCheck
+from HyperPyro.helpers.SQL.globals import gvarstatus
+from HyperPyro.helpers.tools import convert_to_image
+from HyperPyro.utils import get_readable_time
+from HyperPyro.utils.misc import restart
 
 from .help import add_command_help
 
 modules = CMD_HELP
 alive_logo = (
-    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/eda4816a97d4e74445fc0.jpg"
+    gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/b0789a05f7a5892ba06a9.jpg"
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "🤖"
 alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hey bro, I am rams."
@@ -46,14 +46,14 @@ async def alive(client: Client, message: Message):
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
     man = (
-        f"**꧁༺[RamPyro-Bot](https://github.com/ramadhani892/RamPyro-Bot)༻꧂**\n\n"
+        f"**• [HyperPyro-Bot](https://github.com/Ling-ex/HyperPyro) •**\n\n"
         f"━───────╯•╰───────━\n"
         f"{emoji} <b>ʙᴏᴛ ᴠᴇʀsɪᴏɴ :</b> <code>{BOT_VER}</code> \n"
         f"{emoji} <b>ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :</b> <code>{python_version()}</code> \n"
         f"{emoji} <b>ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :</b> <code>{versipyro}</code> \n"
         f"━───────╮•╭───────━\n"
         f"➠ 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 : [❝𝐂𝐥𝐢𝐜𝐤❞ ](tg://user?id={client.me.id}) \n\n"
-        f"    **[𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/{GROUP})** | **[𝙲𝚑𝚊𝚗𝚗𝚎𝚕](https://t.me/{CHANNEL})** | **[𝙾𝚠𝚗𝚎𝚛](t.me/thisrama)**"
+        f"    **[𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/{GROUP})** | **[𝙲𝚑𝚊𝚗𝚗𝚎𝚕](https://t.me/{CHANNEL})** | **[𝙾𝚠𝚗𝚎𝚛](t.me/excute7)**"
     )
     try:
         await asyncio.gather(
@@ -72,7 +72,7 @@ async def alive(client: Client, message: Message):
 @Client.on_message(filters.command("setalivelogo", cmd) & filters.me)
 async def setalivelogo(client: Client, message: Message):
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
@@ -109,7 +109,7 @@ async def setalivelogo(client: Client, message: Message):
 @Client.on_message(filters.command("setalivetext", cmd) & filters.me)
 async def setalivetext(client: Client, message: Message):
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
@@ -136,7 +136,7 @@ async def setalivetext(client: Client, message: Message):
 @Client.on_message(filters.command("setemoji", cmd) & filters.me)
 async def setemoji(client: Client, message: Message):
     try:
-        import rams.helpers.SQL.globals as sql
+        import HyperPyro.helpers.SQL.globals as sql
     except AttributeError:
         await message.edit("**Running on Non-SQL mode!**")
         return
