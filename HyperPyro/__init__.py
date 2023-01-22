@@ -103,14 +103,6 @@ TEMP_SETTINGS: Dict[Any, Any] = {}
 TEMP_SETTINGS["PM_COUNT"] = {}
 TEMP_SETTINGS["PM_LAST_MSG"] = {}
 
-app = Client(
-    name="app",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-    plugins=dict(root="HyperPyro/modules/bot"),
-    in_memory=True,
-)
 
 bot1 = (
     Client(
