@@ -5,8 +5,6 @@ from config import *
 from HyperPyro import *
 from HyperPyro.helpers import *
 from HyperPyro.helpers.SQL import *
-from HyperPyro.resources import *
-from HyperPyro.utils import *
 
 
 def __list_all_modules():
