@@ -17,7 +17,6 @@ from config import CMD_HANDLER as cmd
 from HyperPyro.helpers.adminHelpers import DEVS
 from HyperPyro.helpers.basic import edit_or_reply
 from HyperPyro.modules.help import add_command_help
-from HyperPyro.utils.misc import extract_user, extract_user_and_reason, list_admins
 
 unmute_permissions = ChatPermissions(
     can_send_messages=True,
