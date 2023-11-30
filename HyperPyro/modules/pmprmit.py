@@ -22,7 +22,7 @@ from HyperPyro.helpers.tools import get_arg
 from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
-    "╭━━━━━━━━━━━━━━━━━╮\n    SELAMAT DATANG👋\n"
+    "╭━━━━━━━━━━━━━━━━━╮\n    SELAMAT DATANG NJING👋\n"
     "╰━━━━━━━━━━━━━━━━━╯\n"
     "╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
     "• Jangan Spam Majikan Gua.\n"
@@ -31,7 +31,7 @@ DEF_UNAPPROVED_MSG = (
     "╼┅━━━━━━━━╍━━━━━━━━┅╾ \n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
     "┣[• **BOT MASSAGE**\n"
-    "┣[• By HyperPyro-Bot\n"
+    "┣[• By SuherPyro-Bot\n"
     "╰✠╼━━━━━━❖━━━━━━━✠╯"
 )
 
